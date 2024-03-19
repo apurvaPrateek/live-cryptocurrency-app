@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url("./images/background.png");
+    background-size: 100%;
+}
+
+
+
+.container {
+    min-height: 100vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header {
+    align-self: center;
+    margin: 15px;
+    padding: 15px 100px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+header>* {
+    cursor: pointer;
+}
+
+header img {
+    height: 50px;
+
+}
+
+header #lang {
+    position: absolute;
+    right: 50px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px 30px;
+}
+
+
+.content {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 25px;
+}
+
+.content .slogan {
+    font-size: 5rem;
+    font-weight: 700;
+
+}
+
+.slogan span {
+    color: orange;
+}
+
+.content button {
+    align-self: flex-start;
+    border-style: none;
+    background-color: orange;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.coins{
+    align-self: flex-end;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.coins > div{
+    display: flex;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 15px;
+    align-items: center;
+    gap: 10px;
+}
+
+.coins div img{
+    width: 40px;
+    height: 40px;
+}
+
+.value{
+    display: flex;
+    flex-direction: column;
+}
+
+.value .name{
+    color: orange;
+    font-size: 12px;
+}
+
